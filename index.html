@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gershom Personal Portfolio</title>
+    <link rel="stylesheet" href="style2.0.css" />
+    <script
+      src="https://kit.fontawesome.com/fb2ae2b2a3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img
+            src="Images/logo.png"
+            class="logo"
+            alt="Logo for Gershom's Brand"
+          />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>GIS Full Stack Developer</p>
+          <h1>
+            Hello, I'm <span>Gershom </span> <br />Ejoni From North Carolina
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- --------ABOUT----- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="Images/Gershom_Profile.png"
+              alt="Another professional headshot for myself"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              A former professional athlete passionate about exploring the
+              intersection of technology, climate change, and renewable energy
+              solutions. With a focus on web and GIS development, I channel
+              enthusiasm into crafting innovative digital solutions. Committed
+              to leveraging technology for sustainable impact in the ever
+              evolving climate change discourse. Connect with me to delve deeper
+              into my journey and shared interests. Oh! I love nature btw.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>GIS Developer</span><br />Designing Full Stack GIS Web
+                  Applications
+                </li>
+                <li>
+                  <span>Software Developer</span><br />Full Stack Web App
+                  Development
+                </li>
+                <li>
+                  <span>GIS Analysis </span><br />Spatial Insights Through Data
+                  Exploration and Interpretation.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023 - Current</span><br />GIS Specialist at Timmons
+                  Group
+                </li>
+                <li><span>2020-Current</span><br />CEO at IVA Skincare LLC</li>
+                <li>
+                  <span>2022-2023</span><br />GIS Editor Contractor Microsoft
+                  via Inisght Global
+                </li>
+                <li>
+                  <span>2017-2018 </span><br />GIS Enivornmental Assistant at
+                  Virginia Department of Recreation and Conservation
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2019</span><br />Environment Studies & Biology Minor BS
+                  from University of Richmond
+                </li>
+                <li>
+                  <span>2024</span><br />Udemy Certifcation: Introduction to Web
+                  Programming for GIS Applications
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------SERVICES------------ -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div class="webdesign">
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Seamlessly integrating front-end aesthetics with back-end
+              functionality, crafting dynamic and user-friendly websites for an
+              enhanced online experience.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="giswebapp">
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>GIS Webb App Design</h2>
+            <p>
+              Crafting tailored applications to leverage geographic data for
+              intuitive user experiences and informed decision-making.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="gisanalysis">
+            <h2>GIS Analysis</h2>
+            <p>
+              Harnessing the power of spatial data through advanced techniques
+              and methodologies to uncover meaningful insights, facilitate
+              informed decision-making, and drive effective solutions across
+              various domains and industries.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------PORTFOLIO------ -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/work-1.png" alt="cover for img portfolio 1" />
+            <div class="layer">
+              <h3>Fullstack Mexico City Attractions Web App</h3>
+              <p>
+                This web application will allow users to view atttractions in Mexico City.
+                Additionally, the application will allow users add their own attractions and 
+                preform simple geospatial analysis.
+              </p>
+              <a
+                href="https://codepen.io/gershome95/pen/mdgeJrJ"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work-2.png" alt="cover for img portfolio 1" />
+            <div class="layer">
+              <h3>Ecommerce Site Automation </h3>
+              <p>
+                E-Commerce site deployed on DigitalOcean's Ubuntu server using Docker, with Python-based
+                 automation test framework for front-end and back-end regression and smoke testing. 
+                 GitLab pipeline and frontend Selenium tests ensure comprehensive coverage
+              </p>
+              <a href="#">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work-3.png" alt="cover for img portfolio 1" />
+            <div class="layer">
+              <h3>Arizona Adjusted Urban Boundaries</h3>
+              <p>
+                This Web App is created for Arizona's DOT to review the
+                suggested boundaries corrects required by FHWA.
+              </p>
+              <a
+                href="https://experience.arcgis.com/experience/839e21954c70452fa6b78a35383a382d"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+        <!-- link to get-hub perhaps? Should I expand this section? -->
+      </div>
+    </div>
+    <!-- ---------CONTACT---------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>gershom.ejoni@richmond.edu
+            </p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/gershom-ejoni/"
+                ><i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/gershomejoni/"
+                ><i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+            <a href="Images/2024 G.Ejoni CV.docx.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet" action="">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                row="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="button" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright &copy; Gershom. Made with <i class="fa-solid fa-heart"></i>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName('tab-links');
+      var tabcontents = document.getElementsByClassName('tab-contents');
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove('active-link');
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab'); //grabbing open tab information and sending it to tabname in 'opentab' function
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById('sidemenu');
+      function openmenu() {
+        sidemenu.style.right = '0';
+      }
+      function closemenu() {
+        sidemenu.style.right = '-200px';
+      }
+    </script>
+
+    <!-- Contact form submit message to google forms -->
+    <script>
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbzMq-qC18RBBPskTs2TQsMwvT7vUolj63pRRyrB2B_D6PVwA0mupQn0u0SAzJD39bbT/exec';
+      const form = document.forms['submit-to-google-sheet'];
+      const msg = document.getElementById('msg');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = 'Message sent successfully';
+            setTimeout(function () {
+              msg.innerHTML = '';
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+  </body>
+</html>
